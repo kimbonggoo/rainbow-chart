@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비트솔루션</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav id="nav">
+    <div class="logo">
+      <img src="./img/logo.png" alt="logo">
+      <a href="#">비트솔루션</a>
+    </div>
+    <ul class="nav-nav">
+      <a href="#rainbow" />
+      <li>레인보우차트</li>
+      </a>
+      <a href="#price">
+        <li>상품가격</li>
+      </a>
+      <a href="#profit">
+        <li>수익인증</li>
+      </a>
+    </ul>
+    <div class=""></div>
+  </nav>
+
+  <!-- Visual -->
+  <div id="visual" class="container">
+  </div>
+
+
+  <!-- Section-1 -->
+  <section class="sec1" id="rainbow">
+    <div class="container">
+
+      <div class="img-title">
+        <img src="./img/Group 245.png" alt="title and description" />
+      </div>
+
+      <div class="img-boxs">
+        <img src="./img/rainbow01.png" alt="chart1" />
+        <img src="./img/rainbow02.png" alt="chart2" />
+        <img src="./img/rainbow03.png" alt="chart3" />
+        <img src="./img/rainbow04.png" alt="chart4" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Section-3 -->
+  <section class="sec3" id="price">
+    <div class="comtainer">
+
+      <div class="img-box">
+        <img src="./img/Group 246.png" alt="images" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Section-2 -->
+  <section class="sec2" id="profit">
+    <div class="comtainer">
+
+      <div class="img-box">
+        <img src="./img/Group 240.png" alt="images" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- btn -->
+  <div class="apply-btn">
+    <a
+      href="https://docs.google.com/forms/d/1L5ePZiEUxFMrz7Z5nDFrOjKniERpPphdPcbLL76sQ7I/prefill"><button>구매하기</button></a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="title">bit solution</div>
+      <div class="desc">
+        <p>name. bit solution | address. seoul, korea</p>
+        <p>COPYRIGHT &copy; BITSOLUTION ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script>
+    const navbar = document.querySelector("#nav");
+    const navbarHeight = navbar.getBoundingClientRect().height;
+
+    document.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+
+      navbarHeight < scrollY ? navbar.classList.add("fixed") : navbar.classList.remove("fixed");
+
+      if (window.scrollY > navbarHeight) {
+        navbar.classList.add("fixed");
+      } else {
+        navbar.classList.remove("fixed");
+      }
+    });
+  </script>
+</body>
+
+</html>
