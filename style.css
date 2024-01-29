@@ -102,6 +102,9 @@ button:hover {
 }
 
 @media (max-width: 800px) {
+  #nav .logo > a {
+    display: none;
+  }
   #nav ul li {
     margin-right: 24px;
     font-size: 16px;
